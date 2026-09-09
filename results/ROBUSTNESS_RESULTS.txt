@@ -1,0 +1,25 @@
+Robustness sweep summary (100 seeds per sweep point; 1,200 runs total)
+
+Context jitter sweep at sigma=0.30:
+  jitter 0.00: 100/100 success
+  jitter 0.04: 100/100 success
+  jitter 0.08:  99/100 success
+  jitter 0.12:  99/100 success
+  jitter 0.16:  97/100 success
+  jitter 0.20:  98/100 success
+
+Initialization perturbation sweep at jitter=0.08:
+  sigma 0.05: 100/100 success
+  sigma 0.10: 100/100 success
+  sigma 0.20: 100/100 success
+  sigma 0.30:  99/100 success
+  sigma 0.40:  94/100 success
+  sigma 0.50:  94/100 success
+
+The current baseline evaluation was re-run with the released code:
+  Mean-seeking aggregate: 0/100
+  Stochastic denoising: 100/100
+  Direct energy descent: 0/100
+  Settling: 99/100
+
+The manuscript table and discussion have been corrected to these re-run values.
